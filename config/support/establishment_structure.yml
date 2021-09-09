@@ -1,0 +1,90 @@
+# Grouped establishments supported by Get Help Buying for Schools service
+#
+# GIAS columns
+# - EstablishmentTypeGroup
+#   - TypeOfEstablishment
+#
+---
+- group: Local Authority maintained Schools
+  code: 4
+  establishments:
+  - code: 1
+    name: Community school
+  - code: 5
+    name: Foundation school
+  - code: 15
+    name: Local authority nursery school
+  - code: 14
+    name: Pupil referral unit
+  - code: 2
+    name: Voluntary aided school
+  - code: 3
+    name: Voluntary controlled school
+
+- group: Academies
+  code: 10
+  establishments: 
+  - code: 42
+    name: Academy alternative provision converter
+  - code: 43
+    name: Academy alternative provision sponsor led
+  - code: 34
+    name: Academy converter
+  - code: 44
+    name: Academy special converter
+  - code: 33
+    name: Academy special sponsor led
+  - code: 28
+    name: Academy sponsor led
+  # - Academy 16 to 19 sponsor led
+  # - Academy 16-19 converter
+
+- group: Free Schools
+  code: 11
+  establishments:
+  - code: 35
+    name: Free schools
+  - code: 38
+    name: Free schools alternative provider
+  - code: 36
+    name: Free schools special
+  - code: 41
+    name: Studio schools
+  # - Free schools 16 to 19
+  # - University technical college
+
+- group: Special Schools
+  code: 5
+  establishments:
+  - code: 7
+    name: Community special school
+  - code: 12
+    name: Foundation special school
+  # - Non-maintained special school
+  # - Other independent special school
+
+
+# Unsupported establishments
+# -------------------------------------------------------------
+
+# - (2) Universities
+
+# - (6) Welsh schools
+#   - Welsh establishment
+
+# - (1) Colleges
+#   - Further education
+#   - sixth form centres
+
+# - (3) Independent Schools
+#   - Technology college
+#   - Other Independent School
+
+# - (9) Other types
+#   - British schools overseas
+#   - Institutions funded by other government depts
+#   - Misc
+#   - Offshore Schools
+#   - Secure Units
+#   - Service children's education
+#   - Special post 16 institution
