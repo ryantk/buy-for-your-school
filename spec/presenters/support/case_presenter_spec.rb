@@ -26,13 +26,13 @@ RSpec.describe Support::CasePresenter do
 
   describe "#received_at" do
     it "returns the formatted date on which the case was received" do
-      expect(presenter.received_at).to eq("30 January 2000")
+      expect(presenter.received_at).to eq("30 January 2000 at 12:00")
     end
   end
 
   describe "#last_updated_at" do
     it "returns the formatted date on which the case was last updated" do
-      expect(presenter.last_updated_at).to eq("30 January 2000")
+      expect(presenter.last_updated_at).to eq("30 January 2000 at 12:00")
     end
   end
 
@@ -51,6 +51,12 @@ RSpec.describe Support::CasePresenter do
   describe "#category" do
     it "returns a decorated category" do
       expect(presenter.category).to be_a(Support::CategoryPresenter)
+    end
+  end
+
+  describe "#enquiry" do
+    it "returns a decorated enquiry" do
+      expect(presenter.enquiry).to be_a(Support::EnquiryPresenter)
     end
   end
 end

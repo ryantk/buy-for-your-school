@@ -257,8 +257,15 @@ en:
         assign_to_agent: Assign to caseworker
         assign: Assign
 
-    interactions:
+    enquiries:
+        show:
+          header: Request for support
+          category: Category
+          description: Description of problem
+          specification: Attached specification
 
+
+    interactions:
         new:
           contact_with_school: Contact with school
           add_case_note: Add case note
@@ -266,7 +273,12 @@ en:
           phone_call: Phone call
           email_from_school: Email from school
           email_to_school: Email to school
+          note: Case note
           contact_details: Contact details
           contact_details_hint: Add details of the phone call or copy and paste the email here
           created_flash: "%{type} added to case"
+
+        show:
+          body: Notes
+          created_by: Created by
 

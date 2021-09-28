@@ -14,7 +14,7 @@ module Support
 
     # @return [String]
     def format_date(date)
-      date.strftime("%e %B %Y")
+      date.strftime("%e %B %Y at %H:%M")
     end
   end
 end

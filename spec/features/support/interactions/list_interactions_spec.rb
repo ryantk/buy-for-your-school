@@ -1,9 +1,8 @@
-RSpec.feature "Add new interaction to case" do
+RSpec.feature "Listing interactions on case history" do
   let(:support_case) { create(:support_case) }
 
   context "when agent is signed in" do
     before do
-      create(:support_agent)
       user_is_signed_in
       visit "/support/cases/#{support_case.id}"
     end
