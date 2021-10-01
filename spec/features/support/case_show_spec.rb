@@ -3,7 +3,6 @@ RSpec.feature "Case Management Dashboard - show" do
   let(:support_case) { create(:support_case, state: state) }
   let(:base_url) { "/support/cases/#{support_case.id}" }
 
-
   before do
     user_is_signed_in
     visit base_url
@@ -34,10 +33,10 @@ RSpec.feature "Case Management Dashboard - show" do
   end
 
   describe "Request details" do
-    before { visit "#{base_url}#request-details" }
+    before { visit "#{base_url}#case-details" }
 
     it "lists request details" do
-      within "#request-details" do
+      within "#case-details" do
         expect(all(".govuk-summary-list__row")[0]).to have_text "Category"
         expect(all(".govuk-summary-list__row")[1]).to have_text "Description of problem"
         expect(all(".govuk-summary-list__row")[2]).to have_text "Attached specification"

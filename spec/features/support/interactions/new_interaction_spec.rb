@@ -2,7 +2,6 @@ RSpec.feature "Add new interaction to case" do
   let(:support_case) { create(:support_case, state: 1) }
   let(:agent) { create(:support_agent) }
 
-
   context "when agent is signed in" do
     before do
       create(:support_agent)

@@ -256,7 +256,7 @@ en:
         add_note: Add a case note
         add_interaction: Log contact with school
         back: Back to case list
-        case_owner: Case owner
+        case_owner: "Case owner: %{owner}"
         change_case_owner: change
 
       edit:
@@ -282,7 +282,7 @@ en:
           note: Case note
           contact_details: Contact details
           contact_details_hint: Add details of the phone call or copy and paste the email here
-          created_flash: "%{type} added to case"
+          created_flash: %{type} added to case
 
         show:
           body: Notes
