@@ -1,4 +1,4 @@
-<%= link_to t("support.cases.back"), support_case_path(@interaction.case), class: "govuk-back-link" %>
+<%= link_to t("generic.button.back"), support_case_path(@interaction.case), class: "govuk-back-link" %>
 
 <% if @interaction.errors.any? %>
   <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
